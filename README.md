@@ -80,7 +80,7 @@ http://127.0.0.1:5000
 
 ## 🎥 Demo
 
-👉 Add your demo video link here (Google Drive / YouTube)
+https://drive.google.com/drive/folders/176gRNct-_1vsi3X8kfLwoNA6hqNpcz8C
 
 ---
 
