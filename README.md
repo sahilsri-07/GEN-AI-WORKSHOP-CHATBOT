@@ -30,7 +30,7 @@ This project was developed as part of a **Gen AI Workshop**.
 ```
 GEN-AI-WORKSHOP-CHATBOT/
 │
-├── app.py
+├── main.py
 ├── templates/
 │   ├── home.html
 │   ├── about.html
