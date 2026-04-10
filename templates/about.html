@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="top-bar">
+    <h2>SmartStay</h2>
+    <div class="links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+    </div>
+</div>
+
+<div class="form-section">
+    <h2>About Us</h2>
+    <p>SmartStay helps users find and book hotels easily.</p>
+</div>
+
+<div class="chatbot">
+    <div class="chat-header">SmartStay Chat</div>
+    <div class="chat-body" id="chatBody">
+        <div class="bot">Ask me anything about hotels.</div>
+    </div>
+    <div class="chat-input">
+        <input id="msg" onkeypress="if(event.key==='Enter') sendMsg()">
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

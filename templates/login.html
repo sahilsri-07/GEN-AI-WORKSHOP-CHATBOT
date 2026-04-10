@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="top-bar">
+    <h2>SmartStay</h2>
+    <div class="links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+    </div>
+</div>
+
+<div class="form-section">
+    <h2>Login</h2>
+    <input type="text" placeholder="Username"><br>
+    <input type="password" placeholder="Password"><br>
+    <button>Login</button>
+</div>
+
+<div class="chatbot">
+    <div class="chat-header">SmartStay Chat</div>
+    <div class="chat-body" id="chatBody">
+        <div class="bot">Need help logging in?</div>
+    </div>
+    <div class="chat-input">
+        <input id="msg" onkeypress="if(event.key==='Enter') sendMsg()">
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartStay</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="top-bar">
+    <h2>SmartStay</h2>
+    <div class="links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+    </div>
+</div>
+
+<div class="main-section">
+    <h1>Find Your Stay</h1>
+    <p>Simple and comfortable hotel booking</p>
+</div>
+
+<div class="form-section">
+    <h3>Booking Details</h3>
+    <input type="text" id="city" placeholder="Enter city">
+    <input type="date">
+    <input type="date">
+
+    <select>
+        <option>Select Room</option>
+        <option>Single</option>
+        <option>Double</option>
+        <option>Suite</option>
+    </select>
+
+    <button onclick="askBot()">Check Availability</button>
+</div>
+
+<div class="chatbot">
+    <div class="chat-header">SmartStay Chat</div>
+
+    <div class="chat-body" id="chatBody">
+        <div class="bot">Hello! Need help booking a hotel?</div>
+    </div>
+
+    <div class="chat-input">
+        <input id="msg" placeholder="Ask something..." onkeypress="if(event.key==='Enter') sendMsg()">
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
