@@ -35,6 +35,7 @@ GEN-AI-WORKSHOP-CHATBOT/
 │   ├── home.html
 │   ├── about.html
 │   ├── login.html
+|   ├── index.html
 │
 ├── static/
 │   ├── style.css
