@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About</title>
+    <title>About - SmartStay</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -15,18 +15,80 @@
     </div>
 </div>
 
-<div class="form-section">
-    <h2>About Us</h2>
-    <p>SmartStay helps users find and book hotels easily.</p>
+<!-- HERO -->
+<div class="main-section">
+    <h1>About SmartStay</h1>
+    <p>Making hotel booking simple and reliable</p>
 </div>
 
-<div class="chatbot">
-    <div class="chat-header">SmartStay Chat</div>
-    <div class="chat-body" id="chatBody">
-        <div class="bot">Ask me anything about hotels.</div>
+<!-- ABOUT CONTENT -->
+<div class="about-container">
+
+    <div class="about-card">
+        <h3>Who We Are</h3>
+        <p>
+            SmartStay is a simple hotel booking platform designed to help users
+            find comfortable and affordable stays quickly.
+        </p>
     </div>
-    <div class="chat-input">
-        <input id="msg" onkeypress="if(event.key==='Enter') sendMsg()">
+
+    <div class="about-card">
+        <h3>What We Offer</h3>
+        <p>
+            We provide an easy-to-use interface along with a chatbot that helps
+            users explore hotels, check prices, and get booking assistance.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <h3>Our Goal</h3>
+        <p>
+            Our goal is to simplify hotel booking and make it accessible for
+            everyone with a smooth and minimal user experience.
+        </p>
+    </div>
+
+</div>
+
+<!-- FEATURES SECTION -->
+<div class="features-section">
+    <h2>Why Choose SmartStay?</h2>
+
+    <div class="features">
+        <div class="feature">
+            <h4>Easy Booking</h4>
+            <p>Quick and simple booking process</p>
+        </div>
+
+        <div class="feature">
+            <h4>Smart Chatbot</h4>
+            <p>Get instant answers to your queries</p>
+        </div>
+
+        <div class="feature">
+            <h4>Affordable Rooms</h4>
+            <p>Budget-friendly options available</p>
+        </div>
+    </div>
+</div>
+
+<!-- CHATBOT -->
+<div class="chatbot-wrapper">
+    <div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header">
+            SmartStay Assistant
+            <span onclick="toggleChat()" class="close-btn">✖</span>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="bot">Ask me anything about hotels.</div>
+        </div>
+
+        <div class="chat-input">
+            <input id="msg" onkeypress="if(event.key==='Enter') sendMsg()">
+        </div>
     </div>
 </div>
 

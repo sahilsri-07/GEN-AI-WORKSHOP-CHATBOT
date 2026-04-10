@@ -20,6 +20,9 @@ def get_response(user):
 
     if any(x in words for x in ["hi", "hello", "hey"]):
         return "Hello! Welcome to SmartStay."
+    
+    if "city" in user or "cities" in user or "location" in user:
+        return "We currently support hotels in Delhi, Mumbai and Pune."
 
     if "delhi" in user:
         return "Hotels available in Delhi near Airport and Connaught Place."

@@ -1,3 +1,8 @@
+function toggleChat() {
+    const box = document.getElementById("chatbox");
+    box.style.display = box.style.display === "flex" ? "none" : "flex";
+}
+
 function sendMsg() {
     const input = document.getElementById("msg");
     const chat = document.getElementById("chatBody");
@@ -18,12 +23,4 @@ function sendMsg() {
         chat.innerHTML += `<div class="bot">${data.response}</div>`;
         chat.scrollTop = chat.scrollHeight;
     });
-}
-
-function askBot() {
-    const city = document.getElementById("city").value;
-    if (!city) return;
-
-    document.getElementById("msg").value = "hotel in " + city;
-    sendMsg();
 }

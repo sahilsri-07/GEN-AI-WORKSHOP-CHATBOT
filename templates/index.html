@@ -24,16 +24,28 @@
     </form>
 </div>
 
-<div class="chatbot">
-    <div class="chat-header" onclick="toggleChat()">SmartStay Chat</div>
-    
-    <div class="chat-body" id="chatBody">
-        <div class="bot">Hi! Need help booking a hotel?</div>
+<div class="chatbot-wrapper">
+
+    <div class="chat-toggle" onclick="toggleChat()">
+        💬
     </div>
 
-    <div class="chat-input">
-        <input type="text" id="msg" placeholder="Ask something..."
-        onkeypress="if(event.key==='Enter') sendMsg()">
+    <div class="chatbox" id="chatbox">
+
+        <div class="chat-header">
+            SmartStay Assistant
+            <span onclick="toggleChat()" class="close-btn">✖</span>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="bot">Hi! I can help you find hotels or prices.</div>
+        </div>
+
+        <div class="chat-input">
+            <input id="msg" placeholder="Type your message..."
+            onkeypress="if(event.key==='Enter') sendMsg()">
+        </div>
+
     </div>
 </div>
 
